@@ -281,7 +281,7 @@
 			document.getElementById('submitButton').addEventListener('click', function() {
 				const checkbox = document.getElementById('checkbox');
 
-				if (checkbox.checked && document.getElementById('submitButton').innerHTML !== 'Финальный подарок') {
+				if (checkbox.checked && document.getElementById('submitButton').innerHTML !== 'Четвёртый подарок') {
 					const overlay = document.querySelector('.overlay2');
 					overlay.style.display = 'flex';
 
@@ -289,10 +289,10 @@
 						overlay.style.display = 'none';
 					}, 3000);
 					document.getElementById('points').innerText = '3';
-					document.getElementById('submitButton').innerHTML = 'Финальный подарок';
+					document.getElementById('submitButton').innerHTML = 'Четвёртый подарок';
 					
-				} else if (document.getElementById('submitButton').innerHTML === 'Финальный подарок') {
-					if (document.getElementById('submitButton').innerHTML === 'Финальный подарок') {
+				} else if (document.getElementById('submitButton').innerHTML === 'Четвёртый подарок') {
+					if (document.getElementById('submitButton').innerHTML === 'Четвёртый подарок') {
 						window.location.href = 'page8.html';
 					}
 				} else {
